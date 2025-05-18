@@ -24,6 +24,6 @@ app.get("/api/latest", (_: Request, res: Response) => {
   res.send({ data: latestData });
 });
 
-app.listen(port, () => {
-  console.log(`Backend listening at http://localhost:${port}`);
+app.listen(port, "0.0.0.0", () => {
+  console.log(`Backend listening at http://0.0.0.0:${port}`);
 });

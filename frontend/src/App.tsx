@@ -4,7 +4,7 @@ const App = () => {
   const [data, setData] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:3001/api/latest")
+    fetch("http://51.21.199.89:3001/api/latest")
       .then((res) => res.json())
       .then((json) => {
         console.log("Fetched from backend:", json);
